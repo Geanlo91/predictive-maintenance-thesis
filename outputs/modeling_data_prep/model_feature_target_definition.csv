@@ -1,0 +1,15 @@
+column_name,role
+daily_op_hours,model_feature
+cumulative_op_hours,model_feature
+days_since_maintenance,model_feature
+hours_since_maintenance,model_feature
+daily_load_percent,model_feature
+humidity,model_feature
+wind_gust_kph,model_feature
+dust_index,model_feature
+pressure_diff_psi,model_feature
+casing_temperature_c,model_feature
+vibration_mm_s,model_feature
+operational_class,model_feature
+RUL_days,regression_target
+maintenance_due_90d,classification_target

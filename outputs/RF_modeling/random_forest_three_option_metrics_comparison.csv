@@ -1,0 +1,4 @@
+option,model,target,number_of_features,train_start,train_end,test_start,test_end,mae_days,rmse_days,r2_score
+Option_A_Full_Model,Random Forest Regressor,RUL_days,14,2025-01-01,2025-09-30,2025-10-01,2025-12-31,12.027343514690443,16.824048644243604,0.6882552777250914
+Option_C_Condition_Only,Random Forest Regressor,RUL_days,8,2025-01-01,2025-09-30,2025-10-01,2025-12-31,27.51770487467824,34.015926069203296,-0.27439094471543046
+Option_B_Reduced_With_Duty_Class,Random Forest Regressor,RUL_days,11,2025-01-01,2025-09-30,2025-10-01,2025-12-31,27.51924851907622,34.01597677998792,-0.27439474443046774

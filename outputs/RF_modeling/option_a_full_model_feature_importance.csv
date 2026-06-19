@@ -1,0 +1,15 @@
+feature,importance
+hours_since_maintenance,0.615492693072247
+cumulative_op_hours,0.16983045254698045
+days_since_maintenance,0.13214639605075998
+daily_op_hours,0.016788202036546067
+casing_temperature_c,0.012245686198312683
+daily_load_percent,0.0111563931180207
+vibration_mm_s,0.010639615775962499
+dust_index,0.00981107248568707
+pressure_diff_psi,0.009137928024900686
+humidity,0.00730177914728041
+wind_gust_kph,0.004119294163973503
+operational_class_Medium Duty,0.000842832711505706
+operational_class_High Duty,0.00031703165318759435
+operational_class_Low Duty,0.00017062301463563063

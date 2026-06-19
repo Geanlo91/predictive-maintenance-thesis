@@ -1,0 +1,3 @@
+policy,maintenance_events,avg_degradation,max_degradation,avg_health_score,failure_events,high_risk_days
+OEM,12,0.8945975618689385,2.3512222274216246,27.02775748481716,1867,3040
+Predictive,51,0.3966201075484298,0.7010968364258316,60.337989245157026,0,268

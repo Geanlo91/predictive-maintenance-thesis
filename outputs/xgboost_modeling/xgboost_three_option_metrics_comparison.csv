@@ -1,0 +1,4 @@
+option,model,target,number_of_features,train_start,train_end,test_start,test_end,mae_days,rmse_days,r2_score
+Option_A_Full_Model,XGBoost Regressor,RUL_days,14,2025-01-01,2025-09-30,2025-10-01,2025-12-31,12.362651371653968,16.707718598474013,0.69255149681827
+Option_B_Reduced_With_Duty_Class,XGBoost Regressor,RUL_days,11,2025-01-01,2025-09-30,2025-10-01,2025-12-31,28.153909467910943,34.84433226833844,-0.3372184863795924
+Option_C_Condition_Only,XGBoost Regressor,RUL_days,8,2025-01-01,2025-09-30,2025-10-01,2025-12-31,28.339596431394295,35.11454984776829,-0.35803914864772524

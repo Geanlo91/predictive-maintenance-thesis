@@ -1,0 +1,9 @@
+feature,importance
+humidity,0.22085740052520003
+casing_temperature_c,0.21351063711369575
+daily_op_hours,0.12779782902028222
+vibration_mm_s,0.11629273457800851
+wind_gust_kph,0.08915281225519806
+pressure_diff_psi,0.0810711018407006
+dust_index,0.0803285685546302
+daily_load_percent,0.07098891611228456

@@ -1,0 +1,7 @@
+column_name,description,unit,data_type,source,category
+maintenance_due_90d,Binary target indicating whether a maintenance event occurs within the next 90 days,0/1,integer,Derived from maintenance_event,Classification target
+previous_maintenance_event,Binary indicator showing whether maintenance occurred on the previous day,0/1,integer,Derived from maintenance_event,Maintenance history feature
+maintenance_cycle,Cumulative maintenance cycle number for each blower,cycle count,integer,Derived from previous_maintenance_event,Maintenance history feature
+days_since_maintenance,Number of days elapsed since the last maintenance event,days,integer,Derived from maintenance_cycle and date sequence,Maintenance history feature
+cycle_start_cumulative_hours,Cumulative operating hours at the start of the current maintenance cycle,hours,float,Derived from cumulative_op_hours and maintenance_cycle,Intermediate maintenance feature
+hours_since_maintenance,Operating hours elapsed since the last maintenance event,hours,float,Derived from cumulative_op_hours and cycle_start_cumulative_hours,Maintenance history feature

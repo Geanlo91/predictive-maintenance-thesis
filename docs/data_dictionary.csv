@@ -1,0 +1,28 @@
+column_name,description,unit,data_type,source,category
+date,Daily simulation timestamp,date,datetime,"Real weather data from Giyani, South Africa for 2025",Temporal
+blower_id,Unique identifier for each blower,integer,string,Synthetic configuration,Asset
+site_id,Identifier for the site where the blower is located,integer,string,Synthetic configuration,Asset
+operational_class,Operational duty classification of the blower),N/A,string,Synthetic configuration,Operational
+daily_op_hours,Number of hours the blower operates each day,hours/day,float,Synthetic configuration,Operational
+cumulative_op_hours,Cumulative operating hours of the blower over time,hours,float,Derived from daily_op_hours,Operational
+daily_load_percent,Average load on the blower as a percentage of its maximum capacity each day,%,float,Synthetic,Operational
+rpm,Rotations per minute of the blower,rpm,float,Derived from daily_load_percent and max_op_rpm,Operational
+casing_temperature_c,Temperature of the blower casing in degrees Celsius,°C,float,Synthetic derived,"Operational, thermal"
+dust_index,Synthetic index representing the potential for dust accumulation based on wind gusts and humidity,0-100,float,Synthetic derived,Environmental
+max_op_ambient_temp_c,"Maximum ambient temperature a blower can operate in, in degrees Celsius",°C,float,Synthetic derived,"Operational, thermal"
+min_op_ambient_temp_c,"Minimum ambient temperature a blower can operate in, in degrees Celsius",°C,float,Synthetic derived,"Operational, thermal"
+max_op_discharge_temp_c,"Maximum discharge temperature a blower can operate in, in degrees Celsius",°C,float,Synthetic derived,"Operational, thermal"
+amb_temp_avg_c,Average ambient temperature in degrees Celsius,°C,float,"Real weather data from Giyani, South Africa for 2025",Environmental
+amb_temp_min_c,Minimum ambient temperature in degrees Celsius,°C,float,"Real weather data from Giyani, South Africa for 2025",Environmental
+amb_temp_max_c,Maximum ambient temperature in degrees Celsius,°C,float,"Real weather data from Giyani, South Africa for 2025",Environmental
+humidity,Average ambient humidity as a percentage,%,float,"Real weather data from Giyani, South Africa for 2025",Environmental
+wind_gust_kph,Maximum wind gust speed in kilometers per hour,kph,float,"Real weather data from Giyani, South Africa for 2025",Environmental
+vibration_mm_s,Vibration level of the blower in millimeters per second,mm/s,float,Synthetic derived,Mechanical
+pressure_diff_psi,Pressure differential across the blower in pounds per square inch,psi,float,Synthetic derived,Mechanical
+degradation_index,Cumulative degradation score indicating the health of the blower over time,N/A,float,Derived,Degradation
+health_score,"Health score of the blower as a percentage (100% = new condition, 0% = failure threshold)",%,float,Derived from degradation index relative to failure threshold,Health Indicator
+failure_event,"Binary indicator of whether the blower has reached failure threshold (1 = failure, 0 = operational)",N/A,integer,Derived,Target Variable
+maintenance_event_triggered,Binary indicator showing whether a maintenance event occurred on that day),N/A,integer,Derived,Target Variable
+maintenance_event,"Binary indicator of whether a maintenance event occurred on that day (1 = maintenance occurred, 0 = no maintenance occurred)",N/A,integer,Derived,Target Variable
+maintenance_threshold,Dynamic maintenance trigger threshold assigned to each blower unit to simulate variability in maintenance intervention behaviour,0-1 degradation scale,float,Synthetic derived,Maintenance Logic
+RUL_days,Estimated remaining useful life of the blower in days until it reaches the failure threshold,days,float,Derived,Predictive Maintenance

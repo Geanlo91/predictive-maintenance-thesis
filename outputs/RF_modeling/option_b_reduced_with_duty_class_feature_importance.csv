@@ -1,0 +1,12 @@
+feature,importance
+humidity,0.22089869518455657
+casing_temperature_c,0.21349061724484977
+daily_op_hours,0.12564889867659745
+vibration_mm_s,0.11620437280732472
+wind_gust_kph,0.08898600244663274
+pressure_diff_psi,0.08084060512355559
+dust_index,0.08035486977582998
+daily_load_percent,0.07098426116991981
+operational_class_Low Duty,0.0011801027796346044
+operational_class_Medium Duty,0.001036753748439631
+operational_class_High Duty,0.0003748210426592229

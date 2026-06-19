@@ -1,0 +1,2 @@
+model,features,target,best_cv_macro_recall,accuracy,tp_recall,tn_recall,best_params
+Random Forest Classifier,Option_A_Full_Model,maintenance_due_90d,0.9360649988217279,0.9189497716894978,0.9166666666666666,0.9259259259259259,"{'max_depth': 11, 'min_samples_leaf': 1, 'min_samples_split': 30, 'n_estimators': 700}"
